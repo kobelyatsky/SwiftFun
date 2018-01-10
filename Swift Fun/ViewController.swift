@@ -20,9 +20,9 @@ class ViewController: UIViewController {
             myLabel.text = "You hit it more then 10 times"
         }
         
-        if buttonCount >= 15 {
+        if buttonCount >= 12 {
             view.backgroundColor = UIColor.blue
-            myLabel.text = "You hit it more then 15 times"
+            myLabel.text = "You hit it more then 12 times"
         }
     }
     
