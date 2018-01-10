@@ -31,18 +31,44 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Cb-ju-CW6"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-jA-gti">
+                                <rect key="frame" x="125" y="275" width="125" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="fUF-Pf-Zhh"/>
+                                    <constraint firstAttribute="width" constant="125" id="sBl-jm-FJm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmV-wv-cQ9">
+                                <rect key="frame" x="125" y="227" width="125" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="IgT-Rw-5W1"/>
+                                    <constraint firstAttribute="height" constant="32" id="MUz-eK-PLZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fXR-jA-gti" firstAttribute="top" secondItem="KmV-wv-cQ9" secondAttribute="bottom" constant="16" id="1CA-yM-2OY"/>
                             <constraint firstItem="8Ou-1b-KZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61G-k0-rFz"/>
                             <constraint firstItem="faI-8m-6Ba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IhW-dq-ZW7"/>
+                            <constraint firstItem="faI-8m-6Ba" firstAttribute="top" secondItem="fXR-jA-gti" secondAttribute="bottom" constant="16" id="Qeq-14-nmv"/>
                             <constraint firstItem="faI-8m-6Ba" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UeA-rR-QTO"/>
+                            <constraint firstItem="KmV-wv-cQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V6N-uF-sqk"/>
                             <constraint firstItem="8Ou-1b-KZK" firstAttribute="top" secondItem="faI-8m-6Ba" secondAttribute="bottom" constant="8" id="Vwi-oS-rcy"/>
+                            <constraint firstItem="fXR-jA-gti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oY4-3V-RRt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="fXR-jA-gti" id="azF-a2-BbY"/>
                         <outlet property="myLabel" destination="faI-8m-6Ba" id="rYV-Hm-Eq6"/>
+                        <outlet property="topTextField" destination="KmV-wv-cQ9" id="oq0-9g-5J2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

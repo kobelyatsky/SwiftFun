@@ -2,11 +2,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var buttonCount = 0
+//    var buttonCount = 0
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
+    
     
     @IBAction func buttonTapped(_ sender: Any) {
         
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+        
+        /*
         buttonCount += 1
         print(buttonCount)
         
@@ -24,6 +33,7 @@ class ViewController: UIViewController {
             view.backgroundColor = UIColor.blue
             myLabel.text = "You hit it more then 15 times"
         }
+        */
     }
     
     override func viewDidLoad() {
