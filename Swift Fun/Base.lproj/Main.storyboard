@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faI-8m-6Ba">
-                                <rect key="frame" x="142" y="323" width="91" height="21"/>
+                                <rect key="frame" x="142.5" y="323.5" width="90.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-jA-gti">
-                                <rect key="frame" x="125" y="275" width="125" height="32"/>
+                                <rect key="frame" x="125" y="275.5" width="125" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="fUF-Pf-Zhh"/>
                                     <constraint firstAttribute="width" constant="125" id="sBl-jm-FJm"/>
@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmV-wv-cQ9">
-                                <rect key="frame" x="125" y="227" width="125" height="32"/>
+                                <rect key="frame" x="125" y="227.5" width="125" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="IgT-Rw-5W1"/>
                                     <constraint firstAttribute="height" constant="32" id="MUz-eK-PLZ"/>
@@ -51,6 +51,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRm-yK-b2m">
+                                <rect key="frame" x="163" y="180.5" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -61,11 +64,14 @@
                             <constraint firstItem="faI-8m-6Ba" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UeA-rR-QTO"/>
                             <constraint firstItem="KmV-wv-cQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V6N-uF-sqk"/>
                             <constraint firstItem="8Ou-1b-KZK" firstAttribute="top" secondItem="faI-8m-6Ba" secondAttribute="bottom" constant="8" id="Vwi-oS-rcy"/>
+                            <constraint firstItem="CRm-yK-b2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTf-9W-rp4"/>
                             <constraint firstItem="fXR-jA-gti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oY4-3V-RRt"/>
+                            <constraint firstItem="KmV-wv-cQ9" firstAttribute="top" secondItem="CRm-yK-b2m" secondAttribute="bottom" constant="16" id="vLS-EH-7Ek"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="CRm-yK-b2m" id="Uij-9L-icW"/>
                         <outlet property="bottomTextField" destination="fXR-jA-gti" id="azF-a2-BbY"/>
                         <outlet property="myLabel" destination="faI-8m-6Ba" id="rYV-Hm-Eq6"/>
                         <outlet property="topTextField" destination="KmV-wv-cQ9" id="oq0-9g-5J2"/>
